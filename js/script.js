@@ -1,3 +1,13 @@
+$(document).ready(function () {
+  
+  let list = ['carousel-inner', 'carousel-item']
+  
+  function changeSlides () {
+      
+  }
+
+})
+
 
 //Função para comparar senhas
 function comparePassword () {
