@@ -1,9 +1,32 @@
 $(document).ready(function () {
   
+  let slideAtual=1
   let list = ['carousel-inner', 'carousel-item']
   
+  setInterval(changeSlides, 2000)
+
   function changeSlides () {
-      
+
+    if(slideAtual > 0) {
+
+      $("#carousel-inner").removeClass(list[slideAtual -1])
+
+
+    } else {
+      $("#carousel-inner").removeClass(list [list.length -1])
+    }
+    
+    $("#carousel-inner").addClass(list [slideAtual])
+
+    // console.log("Slide atual é :", slideAtual)
+
+    slideAtual++ 
+
+    if (slideAtual > 2) {
+      slideAtual = 0
+    }
+
+
   }
 
 })
